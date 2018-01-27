@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
 
 [Serializable]
@@ -28,6 +27,7 @@ public class CameraCharacterController : MonoBehaviour
     public RaycastDirection[] Directions;
 
     private Rigidbody Rigidbody;
+    private bool MayJump;
 
     public void Awake()
     {
@@ -51,7 +51,10 @@ public class CameraCharacterController : MonoBehaviour
                                                  point.z * direction.PositionModifier.z + transform.position.z * (1 - direction.PositionModifier.z));
 
                 if (direction.Freeze)
+                {
                     Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                    MayJump = true;
+                }
                 else
                     Rigidbody.constraints = RigidbodyConstraints.FreezeAll ^ RigidbodyConstraints.FreezePositionY;
             }
@@ -74,8 +77,9 @@ public class CameraCharacterController : MonoBehaviour
 
     public void TryJump()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && MayJump)
         {
+            MayJump = false;
             Rigidbody.AddForce(new Vector3(0, JumpStrength, 0));
             Rigidbody.constraints = RigidbodyConstraints.FreezeAll ^ RigidbodyConstraints.FreezePositionY;
         }
