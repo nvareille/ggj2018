@@ -24,6 +24,8 @@ public class CameraCharacterController : MonoBehaviour
     public Camera FollowingCamera;
     [SerializeField]
     private Animator _animator;
+    [SerializeField]
+    private SwordController Sword;
 
     [Header("RaycastCollisionDetection")]
     public RaycastDirection[] Directions;
@@ -66,6 +68,8 @@ public class CameraCharacterController : MonoBehaviour
 
         TryJump();
 
+        TryAtk();
+
         Vector3 positionToGo = new Vector3(transform.position.x, transform.position.y, 0) + PositionModifier;
 
         FollowingCamera.transform.position = Vector3.Lerp(FollowingCamera.transform.position, positionToGo, 0.2f);
@@ -102,6 +106,20 @@ public class CameraCharacterController : MonoBehaviour
             Rigidbody.AddForce(new Vector3(0, JumpStrength, 0));
             Rigidbody.constraints = RigidbodyConstraints.FreezeAll ^ RigidbodyConstraints.FreezePositionY;
         }
+    }
+
+    public void TryAtk()
+    {
+        if (Input.GetButtonDown("Fire2"))
+        {
+            _animator.SetTrigger("Attack");
+            Sword.Attack();
+        }
+    }
+
+    public void RemoveCollider()
+    {
+
     }
 
     public Vector3 Raycaster(RaycastDirection direction)
