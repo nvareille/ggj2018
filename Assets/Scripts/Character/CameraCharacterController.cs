@@ -31,41 +31,46 @@ public class CameraCharacterController : MonoBehaviour
     public RaycastDirection[] Directions;
 
     private Rigidbody Rigidbody;
+    private BoxCollider Collider;
     private bool MayJump;
     private float IdleTimer = 0;
 
     public void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
+        Collider = GetComponent<BoxCollider>();
     }
 
     public void FixedUpdate()
     {
-        transform.position += Vector3.right * Input.GetAxis("Horizontal") * Speed;
+        float direction = Input.GetAxis("Horizontal");
 
-        ComputeDirection(Input.GetAxis("Horizontal"));
+        direction = CheckCollision(direction);
+        ComputeDirection(direction);
+        
+        transform.position += Vector3.right * direction * Speed;
 
-        foreach (RaycastDirection direction in Directions)
+        bool touch = false;
+
+        foreach (RaycastDirection d in Directions)
         {
-            Vector3 point = Raycaster(direction);
+            Vector3 point = Raycaster(d);
 
             if (point != Vector3.zero)
             {
-                transform.position = new Vector3(point.x * direction.PositionModifier.x + transform.position.x * (1 - direction.PositionModifier.x),
-                                                 point.y * direction.PositionModifier.y + transform.position.y * (1 - direction.PositionModifier.y),
-                                                 point.z * direction.PositionModifier.z + transform.position.z * (1 - direction.PositionModifier.z));
-
-                if (direction.Freeze)
+                if (d.Freeze)
                 {
-                    Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                    Rigidbody.useGravity = !true;
                     MayJump = true;
                     _animator.SetBool("InTheAir", false);
                 }
                 else
-                    Rigidbody.constraints = RigidbodyConstraints.FreezeAll ^ RigidbodyConstraints.FreezePositionY;
+                    Rigidbody.useGravity = !false;
             }
+            else
+                Rigidbody.useGravity = true;
         }
-
+        
         TryJump();
 
         TryAtk();
@@ -102,9 +107,9 @@ public class CameraCharacterController : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && MayJump)
         {
             MayJump = false;
+            Rigidbody.useGravity = !false;
             _animator.SetBool("InTheAir", true);
             Rigidbody.AddForce(new Vector3(0, JumpStrength, 0));
-            Rigidbody.constraints = RigidbodyConstraints.FreezeAll ^ RigidbodyConstraints.FreezePositionY;
         }
     }
 
@@ -122,17 +127,52 @@ public class CameraCharacterController : MonoBehaviour
 
     }
 
-    public Vector3 Raycaster(RaycastDirection direction)
+    public float CheckCollision(float direction)
     {
-        RaycastHit hit;
+        float yMin = transform.position.y - Collider.bounds.min.y;
+        float yMax = transform.position.y - Collider.bounds.max.y;
+        float test = -yMax;
+        float distance = 0.6f;
 
-        if (Physics.Raycast(transform.position, direction.Direction, out hit, direction.Length))
+        while (test > -yMin)
         {
-            Debug.Log(hit.point);
-            Debug.Log("Hit");
-            return (hit.point - (direction.Direction * direction.Length));
+            Ray[] r = new[]
+            {
+                new Ray(transform.position + new Vector3(0, test, 0), Vector3.right),
+                new Ray(transform.position + new Vector3(0, test, 0), Vector3.left)
+            };
+            
+            foreach (RaycastHit hit in Physics.RaycastAll(r[0], distance))
+            {
+                Debug.Log(hit.collider.name);
+                if (direction > 0)
+                    return (0);
+            }
+
+            foreach (RaycastHit hit in Physics.RaycastAll(r[1], distance))
+            {
+                Debug.Log(hit.collider.name);
+                if (direction < 0)
+                    return (0);
+            }
+
+            test -= 0.1f;
         }
 
+        return (direction);
+    }
+
+    public Vector3 Raycaster(RaycastDirection direction)
+    {
+        float xMin = transform.position.x - Collider.bounds.min.x;
+        float xMax = transform.position.x - Collider.bounds.max.x;
+
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + new Vector3(xMin, 0, 0), direction.Direction, out hit, direction.Length) ||
+            Physics.Raycast(transform.position + new Vector3(xMax, 0, 0), direction.Direction, out hit, direction.Length) ||
+            Physics.Raycast(transform.position, direction.Direction, out hit, direction.Length))
+            return (hit.point - (direction.Direction * direction.Length));
+        
         return (Vector3.zero);
     }
 }
