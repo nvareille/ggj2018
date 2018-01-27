@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 65842145833940762}
   - component: {fileID: 54498446353822742}
   - component: {fileID: 114479896698264494}
+  - component: {fileID: 114590414316811252}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -400,7 +401,9 @@ GameObject:
   - component: {fileID: 4094361777104758}
   - component: {fileID: 65334351694682784}
   - component: {fileID: 114095308678618956}
-  m_Layer: 0
+  - component: {fileID: 33124820476735522}
+  - component: {fileID: 23454636108354526}
+  m_Layer: 2
   m_Name: SwordAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,8 +685,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1562260618008462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.62, z: 0.304}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: 0.62, z: 0.443}
+  m_LocalScale: {x: 1, y: 1.33, z: 1.25}
   m_Children: []
   m_Father: {fileID: 4336355853645158}
   m_RootOrder: 4
@@ -843,7 +846,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1406989177735856}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.13, y: 0.38, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4348923011756220}
@@ -1372,6 +1375,40 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!23 &23454636108354526
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562260618008462}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &23646095366344760
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -1447,6 +1484,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1700071269477232}
   m_Mesh: {fileID: 4300006, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
+--- !u!33 &33124820476735522
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562260618008462}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33302340661970206
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1510,7 +1554,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &65334351694682784
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1518,11 +1562,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1562260618008462}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.33, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.15}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65842145833940762
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1563,8 +1607,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678e40e7a4fc9db46af1368886975592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AtkTimer: 0.6
+  Delay: 0.2
+  AtkDuration: 0.3
+  Target: Enemy
   SwordCollider: {fileID: 65334351694682784}
+  Rend: {fileID: 23454636108354526}
 --- !u!114 &114479896698264494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1584,18 +1631,25 @@ MonoBehaviour:
   _animator: {fileID: 95252104766325478}
   Sword: {fileID: 114095308678618956}
   Directions:
-  - Length: 0.65
-    Direction: {x: 1, y: 0, z: 0}
-    PositionModifier: {x: 1, y: 0, z: 0}
-    Freeze: 0
-  - Length: 0.65
-    Direction: {x: -1, y: 0, z: 0}
-    PositionModifier: {x: 1, y: 0, z: 0}
-    Freeze: 0
   - Length: 0.1
     Direction: {x: 0, y: -1, z: 0}
     PositionModifier: {x: 0, y: 1, z: 0}
     Freeze: 1
+--- !u!114 &114590414316811252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1406989177735856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0cb9edf2b304e8499b05848b92bfbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Life: 30
+  Damage: 3
+  Speed: 1
+  AtkSpeed: 1
 --- !u!137 &137237147663579024
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

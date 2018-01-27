@@ -8,6 +8,7 @@ public abstract class AStats : MonoBehaviour {
     public int Life = 1;
     public int Damage = 1;
     public float Speed = 1;
+    public float AtkSpeed = 1;
 
     protected int CurrentLife;
     protected bool IsDead;

@@ -5,31 +5,44 @@ using UnityEngine;
 public class SwordController : MonoBehaviour {
 
     [Header("Configuration")]
-    public float AtkTimer = 0.6f;
+    public float Delay = 0.6f;
+    public float AtkDuration = 1f;
+    public string Target = "Player";
 
     [Header("Components")]
     [SerializeField]
     private BoxCollider SwordCollider;
+    [SerializeField]
+    private MeshRenderer Rend;
 
     private int Damage = 3;
     public void SetDamage(int val) { Damage = val; }
 
     public void Attack()
     {
-        SwordCollider.enabled = true;
-        Invoke("RemoveCollider", AtkTimer);
+        Invoke("LateAttack", Delay);
+        Invoke("RemoveCollider", AtkDuration + Delay);
     }
 
-    public void RemoveCollider()
+    private void LateAttack()
+    {
+        SwordCollider.enabled = true;
+        if (Rend != null)
+            Rend.enabled = true;
+    }
+
+    private void RemoveCollider()
     {
         SwordCollider.enabled = false;
+        if (Rend != null)
+            Rend.enabled = false;
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.tag == Target)
         {
-            other.GetComponent<EnemyStats>().GetHit(Damage);
+            other.GetComponent<AStats>().GetHit(Damage);
         }
     }
 }
