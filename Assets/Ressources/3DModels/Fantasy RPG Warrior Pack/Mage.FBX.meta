@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: 7fac3d53de736694bbc13b591d3e055b
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: BoneHandLeft01
+    100002: BoneHandLeft02
+    100004: BoneHandLeft03
+    100006: BoneHandRight01
+    100008: BoneHandRight02
+    100010: BoneHandRight03
+    100012: BoneHat00
+    100014: BoneHat01
+    100016: BoneHat02
+    100018: BoneHat03
+    100020: BoneHead
+    100022: BoneLegLeft01
+    100024: BoneLegLeft02
+    100026: BoneLegLeft03
+    100028: BoneLegRight01
+    100030: BoneLegRight02
+    100032: BoneLegRight03
+    100034: BoneSpine01
+    100036: BoneSpine02
+    100038: CtrlHip
+    100040: CtrlLegLeft
+    100042: CtrlLegRight
+    100044: CtrlMain
+    100046: IKHat
+    100048: IKLegLeft
+    100050: IKLegRight
+    100052: //RootNode
+    100054: MeshHumanMage
+    100056: MeshStaff
+    400000: BoneHandLeft01
+    400002: BoneHandLeft02
+    400004: BoneHandLeft03
+    400006: BoneHandRight01
+    400008: BoneHandRight02
+    400010: BoneHandRight03
+    400012: BoneHat00
+    400014: BoneHat01
+    400016: BoneHat02
+    400018: BoneHat03
+    400020: BoneHead
+    400022: BoneLegLeft01
+    400024: BoneLegLeft02
+    400026: BoneLegLeft03
+    400028: BoneLegRight01
+    400030: BoneLegRight02
+    400032: BoneLegRight03
+    400034: BoneSpine01
+    400036: BoneSpine02
+    400038: CtrlHip
+    400040: CtrlLegLeft
+    400042: CtrlLegRight
+    400044: CtrlMain
+    400046: IKHat
+    400048: IKLegLeft
+    400050: IKLegRight
+    400052: //RootNode
+    400054: MeshHumanMage
+    400056: MeshStaff
+    2300000: MeshStaff
+    3300000: MeshStaff
+    4300000: MeshStaff
+    4300002: MeshHumanMage
+    7400000: Idle
+    7400002: Attack1
+    7400004: Attack2
+    7400006: Idle
+    7400008: Hit
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: MeshHumanMage
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02/BoneLegLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02/BoneLegRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02/BoneHandLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03/MeshStaff
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02/BoneHat03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/IKHat
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshHumanMage
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02/BoneLegLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02/BoneLegRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02/BoneHandLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03/MeshStaff
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02/BoneHat03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/IKHat
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshHumanMage
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Take 001
+      firstFrame: 250
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02/BoneLegLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02/BoneLegRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02/BoneHandLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03/MeshStaff
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02/BoneHat03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/IKHat
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshHumanMage
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 350
+      lastFrame: 470
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02/BoneLegLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02/BoneLegRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02/BoneHandLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03/MeshStaff
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02/BoneHat03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/IKHat
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshHumanMage
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit
+      takeName: Take 001
+      firstFrame: 500
+      lastFrame: 550
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft01/BoneLegLeft02/BoneLegLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight01/BoneLegRight02/BoneLegRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandLeft01/BoneHandLeft02/BoneHandLeft03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHandRight01/BoneHandRight02/BoneHandRight03/MeshStaff
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/BoneHat00/BoneHat01/BoneHat02/BoneHat03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine01/BoneSpine02/BoneHead/IKHat
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshHumanMage
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0299999993
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 

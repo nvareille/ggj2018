@@ -1,0 +1,1127 @@
+fileFormatVersion: 2
+guid: 3f50278737ae5fe40a21615d8dda2dfb
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: BoneHandLeft00
+    100002: BoneHandLeft01
+    100004: BoneHandLeft02
+    100006: BoneHandLeft03
+    100008: BoneHandLeft04
+    100010: BoneHandRight00
+    100012: BoneHandRight01
+    100014: BoneHandRight02
+    100016: BoneHandRight03
+    100018: BoneHandRight04
+    100020: BoneHead00
+    100022: BoneLegLeft00
+    100024: BoneLegLeft01
+    100026: BoneLegLeft02
+    100028: BoneLegRight00
+    100030: BoneLegRight01
+    100032: BoneLegRight02
+    100034: BoneSpine00
+    100036: BoneSpine01
+    100038: CtrlHip
+    100040: CtrlLegLeft
+    100042: CtrlLegRight
+    100044: //RootNode
+    100046: IKLegLeft
+    100048: IKLegRight
+    100050: MeshGolemBody00
+    100052: MeshGolemFingerLeft00
+    100054: MeshGolemFingerLeft01
+    100056: MeshGolemFingerLeft02
+    100058: MeshGolemFingerRight00
+    100060: MeshGolemFingerRight01
+    100062: MeshGolemFingerRight02
+    100064: MeshGolemHandLeft00
+    100066: MeshGolemHandLeft01
+    100068: MeshGolemHandLeft02
+    100070: MeshGolemHandRight00
+    100072: MeshGolemHandRight01
+    100074: MeshGolemHandRight02
+    100076: MeshGolemHead00
+    100078: MeshGolemLegLeft00
+    100080: MeshGolemLegLeft01
+    100082: MeshGolemLegRight00
+    100084: MeshGolemLegRight01
+    100086: MeshGolemPelvis00
+    400000: BoneHandLeft00
+    400002: BoneHandLeft01
+    400004: BoneHandLeft02
+    400006: BoneHandLeft03
+    400008: BoneHandLeft04
+    400010: BoneHandRight00
+    400012: BoneHandRight01
+    400014: BoneHandRight02
+    400016: BoneHandRight03
+    400018: BoneHandRight04
+    400020: BoneHead00
+    400022: BoneLegLeft00
+    400024: BoneLegLeft01
+    400026: BoneLegLeft02
+    400028: BoneLegRight00
+    400030: BoneLegRight01
+    400032: BoneLegRight02
+    400034: BoneSpine00
+    400036: BoneSpine01
+    400038: CtrlHip
+    400040: CtrlLegLeft
+    400042: CtrlLegRight
+    400044: //RootNode
+    400046: IKLegLeft
+    400048: IKLegRight
+    400050: MeshGolemBody00
+    400052: MeshGolemFingerLeft00
+    400054: MeshGolemFingerLeft01
+    400056: MeshGolemFingerLeft02
+    400058: MeshGolemFingerRight00
+    400060: MeshGolemFingerRight01
+    400062: MeshGolemFingerRight02
+    400064: MeshGolemHandLeft00
+    400066: MeshGolemHandLeft01
+    400068: MeshGolemHandLeft02
+    400070: MeshGolemHandRight00
+    400072: MeshGolemHandRight01
+    400074: MeshGolemHandRight02
+    400076: MeshGolemHead00
+    400078: MeshGolemLegLeft00
+    400080: MeshGolemLegLeft01
+    400082: MeshGolemLegRight00
+    400084: MeshGolemLegRight01
+    400086: MeshGolemPelvis00
+    2300000: //RootNode
+    2300002: MeshGolemBody00
+    2300004: MeshGolemFingerLeft00
+    2300006: MeshGolemFingerLeft01
+    2300008: MeshGolemFingerLeft02
+    2300010: MeshGolemFingerRight00
+    2300012: MeshGolemFingerRight01
+    2300014: MeshGolemFingerRight02
+    2300016: MeshGolemHandLeft00
+    2300018: MeshGolemHandLeft01
+    2300020: MeshGolemHandLeft02
+    2300022: MeshGolemHandRight00
+    2300024: MeshGolemHandRight01
+    2300026: MeshGolemHandRight02
+    2300028: MeshGolemHead00
+    2300030: MeshGolemLegLeft00
+    2300032: MeshGolemLegLeft01
+    2300034: MeshGolemLegRight00
+    2300036: MeshGolemLegRight01
+    2300038: MeshGolemPelvis00
+    3300000: //RootNode
+    3300002: MeshGolemBody00
+    3300004: MeshGolemFingerLeft00
+    3300006: MeshGolemFingerLeft01
+    3300008: MeshGolemFingerLeft02
+    3300010: MeshGolemFingerRight00
+    3300012: MeshGolemFingerRight01
+    3300014: MeshGolemFingerRight02
+    3300016: MeshGolemHandLeft00
+    3300018: MeshGolemHandLeft01
+    3300020: MeshGolemHandLeft02
+    3300022: MeshGolemHandRight00
+    3300024: MeshGolemHandRight01
+    3300026: MeshGolemHandRight02
+    3300028: MeshGolemHead00
+    3300030: MeshGolemLegLeft00
+    3300032: MeshGolemLegLeft01
+    3300034: MeshGolemLegRight00
+    3300036: MeshGolemLegRight01
+    3300038: MeshGolemPelvis00
+    4300000: CtrlMain
+    4300002: MeshGolemHandRight01
+    4300004: MeshGolemFingerRight02
+    4300006: MeshGolemFingerRight00
+    4300008: MeshGolemFingerRight01
+    4300010: MeshGolemHandRight00
+    4300012: MeshGolemHandRight02
+    4300014: MeshGolemHandLeft02
+    4300016: MeshGolemFingerLeft02
+    4300018: MeshGolemFingerLeft00
+    4300020: MeshGolemFingerLeft01
+    4300022: MeshGolemHandLeft01
+    4300024: MeshGolemHandLeft00
+    4300026: MeshGolemBody00
+    4300028: MeshGolemHead00
+    4300030: MeshGolemLegLeft00
+    4300032: MeshGolemLegLeft01
+    4300034: MeshGolemLegRight00
+    4300036: MeshGolemLegRight01
+    4300038: MeshGolemPelvis00
+    7400000: Idle
+    7400002: Smash
+    7400004: Attack1
+    7400006: Attack2
+    7400008: Attack3
+    7400010: Idle2
+    7400012: Summon
+    7400014: Hit
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Smash
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Take 001
+      firstFrame: 300
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Take 001
+      firstFrame: 420
+      lastFrame: 512
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack3
+      takeName: Take 001
+      firstFrame: 550
+      lastFrame: 640
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle2
+      takeName: Take 001
+      firstFrame: 680
+      lastFrame: 800
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Summon
+      takeName: Take 001
+      firstFrame: 840
+      lastFrame: 960
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit
+      takeName: Take 001
+      firstFrame: 980
+      lastFrame: 1030
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoneSpine00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft01/MeshGolemFingerLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft02/MeshGolemFingerLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/BoneHandLeft03/MeshGolemFingerLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/BoneHandLeft00/MeshGolemHandLeft02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandLeft04/MeshGolemHandLeft01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight01/MeshGolemFingerRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight02/MeshGolemFingerRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/BoneHandRight03/MeshGolemFingerRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/BoneHandRight00/MeshGolemHandRight01
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHandRight04/MeshGolemHandRight02
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/BoneHead00/MeshGolemHead00
+        weight: 1
+      - path: BoneSpine00/BoneSpine01/MeshGolemBody00
+        weight: 1
+      - path: BoneSpine00/CtrlHip
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/BoneLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/BoneLegLeft01/MeshGolemLegLeft00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegLeft02/MeshGolemLegLeft01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/BoneLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/BoneLegRight01/MeshGolemLegRight00
+        weight: 1
+      - path: BoneSpine00/CtrlHip/BoneLegRight02/MeshGolemLegRight01
+        weight: 1
+      - path: BoneSpine00/MeshGolemPelvis00
+        weight: 1
+      - path: CtrlLegLeft
+        weight: 1
+      - path: CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlLegRight
+        weight: 1
+      - path: CtrlLegRight/IKLegRight
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0250000004
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 

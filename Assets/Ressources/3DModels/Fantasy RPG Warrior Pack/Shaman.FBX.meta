@@ -1,0 +1,433 @@
+fileFormatVersion: 2
+guid: c70840552cddc1d41af4131033223563
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: BoneHead00
+    100002: BoneLeftHand00
+    100004: BoneLeftHand01
+    100006: BoneLeftHand02
+    100008: BoneRightHand00
+    100010: BoneRightHand01
+    100012: BoneRightHand02
+    100014: BoneSpine00
+    100016: BoneSpine01
+    100018: CtrlChain00
+    100020: CtrlChain01
+    100022: CtrlChain02
+    100024: CtrlChain03
+    100026: CtrlChain04
+    100028: CtrlChain05
+    100030: CtrlMain
+    100032: LineChain00
+    100034: LineChain01
+    100036: LineChain02
+    100038: //RootNode
+    100040: ShamanMesh
+    100042: ShamanMeshChains01
+    100044: ShamanMeshChains02
+    100046: ShamanMeshChains03
+    400000: BoneHead00
+    400002: BoneLeftHand00
+    400004: BoneLeftHand01
+    400006: BoneLeftHand02
+    400008: BoneRightHand00
+    400010: BoneRightHand01
+    400012: BoneRightHand02
+    400014: BoneSpine00
+    400016: BoneSpine01
+    400018: CtrlChain00
+    400020: CtrlChain01
+    400022: CtrlChain02
+    400024: CtrlChain03
+    400026: CtrlChain04
+    400028: CtrlChain05
+    400030: CtrlMain
+    400032: LineChain00
+    400034: LineChain01
+    400036: LineChain02
+    400038: //RootNode
+    400040: ShamanMesh
+    400042: ShamanMeshChains01
+    400044: ShamanMeshChains02
+    400046: ShamanMeshChains03
+    2300000: CtrlChain00
+    2300002: CtrlChain01
+    2300004: CtrlChain02
+    2300006: CtrlChain03
+    2300008: CtrlChain04
+    2300010: CtrlChain05
+    3300000: CtrlChain00
+    3300002: CtrlChain01
+    3300004: CtrlChain02
+    3300006: CtrlChain03
+    3300008: CtrlChain04
+    3300010: CtrlChain05
+    4300000: ShamanMesh
+    4300002: ShamanMeshChains02
+    4300004: ShamanMeshChains01
+    4300006: ShamanMeshChains03
+    4300008: CtrlChain04
+    4300010: CtrlChain01
+    4300012: CtrlChain03
+    4300014: CtrlChain02
+    4300016: CtrlChain05
+    4300018: CtrlChain00
+    7400000: Idle
+    7400002: Attack1
+    7400004: Attack2
+    7400006: Hit
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: ShamanMesh
+    13700002: ShamanMeshChains01
+    13700004: ShamanMeshChains02
+    13700006: ShamanMeshChains03
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: -30
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/BoneSpine00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01/BoneLeftHand02
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01/BoneRightHand02
+        weight: 1
+      - path: CtrlMain/CtrlChain03
+        weight: 1
+      - path: CtrlMain/CtrlChain03/CtrlChain02
+        weight: 1
+      - path: CtrlMain/CtrlChain04
+        weight: 1
+      - path: CtrlMain/CtrlChain04/CtrlChain01
+        weight: 1
+      - path: CtrlMain/CtrlChain05
+        weight: 1
+      - path: CtrlMain/CtrlChain05/CtrlChain00
+        weight: 1
+      - path: LineChain00
+        weight: 1
+      - path: LineChain01
+        weight: 1
+      - path: LineChain02
+        weight: 1
+      - path: ShamanMesh
+        weight: 1
+      - path: ShamanMeshChains01
+        weight: 1
+      - path: ShamanMeshChains02
+        weight: 1
+      - path: ShamanMeshChains03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 350
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/BoneSpine00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01/BoneLeftHand02
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01/BoneRightHand02
+        weight: 1
+      - path: CtrlMain/CtrlChain03
+        weight: 1
+      - path: CtrlMain/CtrlChain03/CtrlChain02
+        weight: 1
+      - path: CtrlMain/CtrlChain04
+        weight: 1
+      - path: CtrlMain/CtrlChain04/CtrlChain01
+        weight: 1
+      - path: CtrlMain/CtrlChain05
+        weight: 1
+      - path: CtrlMain/CtrlChain05/CtrlChain00
+        weight: 1
+      - path: LineChain00
+        weight: 1
+      - path: LineChain01
+        weight: 1
+      - path: LineChain02
+        weight: 1
+      - path: ShamanMesh
+        weight: 1
+      - path: ShamanMeshChains01
+        weight: 1
+      - path: ShamanMeshChains02
+        weight: 1
+      - path: ShamanMeshChains03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 550
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/BoneSpine00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01/BoneLeftHand02
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01/BoneRightHand02
+        weight: 1
+      - path: CtrlMain/CtrlChain03
+        weight: 1
+      - path: CtrlMain/CtrlChain03/CtrlChain02
+        weight: 1
+      - path: CtrlMain/CtrlChain04
+        weight: 1
+      - path: CtrlMain/CtrlChain04/CtrlChain01
+        weight: 1
+      - path: CtrlMain/CtrlChain05
+        weight: 1
+      - path: CtrlMain/CtrlChain05/CtrlChain00
+        weight: 1
+      - path: LineChain00
+        weight: 1
+      - path: LineChain01
+        weight: 1
+      - path: LineChain02
+        weight: 1
+      - path: ShamanMesh
+        weight: 1
+      - path: ShamanMeshChains01
+        weight: 1
+      - path: ShamanMeshChains02
+        weight: 1
+      - path: ShamanMeshChains03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit
+      takeName: Take 001
+      firstFrame: 600
+      lastFrame: 660
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/BoneSpine00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneHead00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneLeftHand00/BoneLeftHand01/BoneLeftHand02
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01
+        weight: 1
+      - path: CtrlMain/BoneSpine00/BoneSpine01/BoneRightHand00/BoneRightHand01/BoneRightHand02
+        weight: 1
+      - path: CtrlMain/CtrlChain03
+        weight: 1
+      - path: CtrlMain/CtrlChain03/CtrlChain02
+        weight: 1
+      - path: CtrlMain/CtrlChain04
+        weight: 1
+      - path: CtrlMain/CtrlChain04/CtrlChain01
+        weight: 1
+      - path: CtrlMain/CtrlChain05
+        weight: 1
+      - path: CtrlMain/CtrlChain05/CtrlChain00
+        weight: 1
+      - path: LineChain00
+        weight: 1
+      - path: LineChain01
+        weight: 1
+      - path: LineChain02
+        weight: 1
+      - path: ShamanMesh
+        weight: 1
+      - path: ShamanMeshChains01
+        weight: 1
+      - path: ShamanMeshChains02
+        weight: 1
+      - path: ShamanMeshChains03
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0250000004
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 

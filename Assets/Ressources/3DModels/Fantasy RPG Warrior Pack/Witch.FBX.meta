@@ -1,0 +1,762 @@
+fileFormatVersion: 2
+guid: 0c120de9b829a444b80abafccf3cb04d
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: BoneHair00
+    100002: BoneHair01
+    100004: BoneHair02
+    100006: BoneHair03
+    100008: BoneHandLeft00
+    100010: BoneHandLeft01
+    100012: BoneHandLeft02
+    100014: BoneHandRight00
+    100016: BoneHandRight01
+    100018: BoneHandRight02
+    100020: BoneLegLeft00
+    100022: BoneLegLeft01
+    100024: BoneLegLeftMage009
+    100026: BoneLegRight00
+    100028: BoneLegRight01
+    100030: BoneLegRightMage009
+    100032: BoneSpine00
+    100034: BoneSpine01
+    100036: BoneSpine02
+    100038: CtrlCape
+    100040: CtrlCape00
+    100042: CtrlCape01
+    100044: CtrlCape02
+    100046: CtrlCape03
+    100048: CtrlHip
+    100050: CtrlLegLeft
+    100052: CtrlLegRight
+    100054: CtrlMain
+    100056: IKLegLeft
+    100058: IKLegRight
+    100060: MeshAntagonistArmor00
+    100062: MeshAntagonistArmor01
+    100064: MeshAntagonistArmor02
+    100066: MeshAntagonistArmor03
+    100068: MeshAntagonistArmor04
+    100070: MeshAntagonistArmor05
+    100072: MeshAntagonistArmor06
+    100074: MeshAntagonistArmor07
+    100076: MeshAntagonistArmor08
+    100078: MeshAntagonistBody
+    100080: MeshAntagonistCape
+    100082: MeshAntagonistLint
+    100084: MeshAntagonistSword
+    100086: //RootNode
+    400000: BoneHair00
+    400002: BoneHair01
+    400004: BoneHair02
+    400006: BoneHair03
+    400008: BoneHandLeft00
+    400010: BoneHandLeft01
+    400012: BoneHandLeft02
+    400014: BoneHandRight00
+    400016: BoneHandRight01
+    400018: BoneHandRight02
+    400020: BoneLegLeft00
+    400022: BoneLegLeft01
+    400024: BoneLegLeftMage009
+    400026: BoneLegRight00
+    400028: BoneLegRight01
+    400030: BoneLegRightMage009
+    400032: BoneSpine00
+    400034: BoneSpine01
+    400036: BoneSpine02
+    400038: CtrlCape
+    400040: CtrlCape00
+    400042: CtrlCape01
+    400044: CtrlCape02
+    400046: CtrlCape03
+    400048: CtrlHip
+    400050: CtrlLegLeft
+    400052: CtrlLegRight
+    400054: CtrlMain
+    400056: IKLegLeft
+    400058: IKLegRight
+    400060: MeshAntagonistArmor00
+    400062: MeshAntagonistArmor01
+    400064: MeshAntagonistArmor02
+    400066: MeshAntagonistArmor03
+    400068: MeshAntagonistArmor04
+    400070: MeshAntagonistArmor05
+    400072: MeshAntagonistArmor06
+    400074: MeshAntagonistArmor07
+    400076: MeshAntagonistArmor08
+    400078: MeshAntagonistBody
+    400080: MeshAntagonistCape
+    400082: MeshAntagonistLint
+    400084: MeshAntagonistSword
+    400086: //RootNode
+    2300000: CtrlCape
+    2300002: MeshAntagonistArmor00
+    2300004: MeshAntagonistArmor01
+    2300006: MeshAntagonistArmor02
+    2300008: MeshAntagonistArmor03
+    2300010: MeshAntagonistArmor04
+    2300012: MeshAntagonistArmor05
+    2300014: MeshAntagonistArmor06
+    2300016: MeshAntagonistArmor07
+    2300018: MeshAntagonistArmor08
+    2300020: MeshAntagonistLint
+    2300022: MeshAntagonistSword
+    3300000: CtrlCape
+    3300002: MeshAntagonistArmor00
+    3300004: MeshAntagonistArmor01
+    3300006: MeshAntagonistArmor02
+    3300008: MeshAntagonistArmor03
+    3300010: MeshAntagonistArmor04
+    3300012: MeshAntagonistArmor05
+    3300014: MeshAntagonistArmor06
+    3300016: MeshAntagonistArmor07
+    3300018: MeshAntagonistArmor08
+    3300020: MeshAntagonistLint
+    3300022: MeshAntagonistSword
+    4300000: MeshAntagonistBody
+    4300002: MeshAntagonistArmor03
+    4300004: MeshAntagonistArmor04
+    4300006: MeshAntagonistArmor05
+    4300008: MeshAntagonistArmor02
+    4300010: MeshAntagonistArmor06
+    4300012: MeshAntagonistArmor07
+    4300014: MeshAntagonistArmor01
+    4300016: MeshAntagonistSword
+    4300018: MeshAntagonistArmor00
+    4300020: MeshAntagonistArmor08
+    4300022: MeshAntagonistLint
+    4300024: CtrlCape
+    4300026: MeshAntagonistCape
+    7400000: Walk
+    7400002: Idle
+    7400004: Attack1
+    7400006: Attack2
+    7400008: Hit
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: MeshAntagonistBody
+    13700002: MeshAntagonistCape
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlCape
+        weight: 1
+      - path: CtrlMain/CtrlCape00
+        weight: 1
+      - path: CtrlMain/CtrlCape01
+        weight: 1
+      - path: CtrlMain/CtrlCape02
+        weight: 1
+      - path: CtrlMain/CtrlCape03
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01/BoneLegLeftMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/MeshAntagonistArmor04
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01/BoneLegRightMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/MeshAntagonistArmor03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02/MeshAntagonistArmor02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/MeshAntagonistArmor06
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/MeshAntagonistArmor07
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistArmor01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistSword
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/MeshAntagonistArmor00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/MeshAntagonistArmor08
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02/BoneHair03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistArmor05
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistLint
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshAntagonistBody
+        weight: 1
+      - path: MeshAntagonistCape
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlCape
+        weight: 1
+      - path: CtrlMain/CtrlCape00
+        weight: 1
+      - path: CtrlMain/CtrlCape01
+        weight: 1
+      - path: CtrlMain/CtrlCape02
+        weight: 1
+      - path: CtrlMain/CtrlCape03
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01/BoneLegLeftMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/MeshAntagonistArmor04
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01/BoneLegRightMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/MeshAntagonistArmor03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02/MeshAntagonistArmor02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/MeshAntagonistArmor06
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/MeshAntagonistArmor07
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistArmor01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistSword
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/MeshAntagonistArmor00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/MeshAntagonistArmor08
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02/BoneHair03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistArmor05
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistLint
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshAntagonistBody
+        weight: 1
+      - path: MeshAntagonistCape
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Take 001
+      firstFrame: 250
+      lastFrame: 380
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlCape
+        weight: 1
+      - path: CtrlMain/CtrlCape00
+        weight: 1
+      - path: CtrlMain/CtrlCape01
+        weight: 1
+      - path: CtrlMain/CtrlCape02
+        weight: 1
+      - path: CtrlMain/CtrlCape03
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01/BoneLegLeftMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/MeshAntagonistArmor04
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01/BoneLegRightMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/MeshAntagonistArmor03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02/MeshAntagonistArmor02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/MeshAntagonistArmor06
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/MeshAntagonistArmor07
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistArmor01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistSword
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/MeshAntagonistArmor00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/MeshAntagonistArmor08
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02/BoneHair03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistArmor05
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistLint
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshAntagonistBody
+        weight: 1
+      - path: MeshAntagonistCape
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 500
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlCape
+        weight: 1
+      - path: CtrlMain/CtrlCape00
+        weight: 1
+      - path: CtrlMain/CtrlCape01
+        weight: 1
+      - path: CtrlMain/CtrlCape02
+        weight: 1
+      - path: CtrlMain/CtrlCape03
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01/BoneLegLeftMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/MeshAntagonistArmor04
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01/BoneLegRightMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/MeshAntagonistArmor03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02/MeshAntagonistArmor02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/MeshAntagonistArmor06
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/MeshAntagonistArmor07
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistArmor01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistSword
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/MeshAntagonistArmor00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/MeshAntagonistArmor08
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02/BoneHair03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistArmor05
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistLint
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshAntagonistBody
+        weight: 1
+      - path: MeshAntagonistCape
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Hit
+      takeName: Take 001
+      firstFrame: 550
+      lastFrame: 610
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CtrlMain
+        weight: 1
+      - path: CtrlMain/CtrlCape
+        weight: 1
+      - path: CtrlMain/CtrlCape00
+        weight: 1
+      - path: CtrlMain/CtrlCape01
+        weight: 1
+      - path: CtrlMain/CtrlCape02
+        weight: 1
+      - path: CtrlMain/CtrlCape03
+        weight: 1
+      - path: CtrlMain/CtrlHip
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/BoneLegLeft01/BoneLegLeftMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegLeft00/MeshAntagonistArmor04
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/BoneLegRight01/BoneLegRightMage009
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneLegRight00/MeshAntagonistArmor03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/BoneHandLeft02/MeshAntagonistArmor02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/BoneHandLeft01/MeshAntagonistArmor06
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandLeft00/MeshAntagonistArmor07
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistArmor01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/BoneHandRight02/MeshAntagonistSword
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/BoneHandRight01/MeshAntagonistArmor00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneHandRight00/MeshAntagonistArmor08
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/BoneSpine02/BoneHair00/BoneHair01/BoneHair02/BoneHair03
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistArmor05
+        weight: 1
+      - path: CtrlMain/CtrlHip/BoneSpine00/BoneSpine01/MeshAntagonistLint
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegLeft/IKLegLeft
+        weight: 1
+      - path: CtrlMain/CtrlLegRight
+        weight: 1
+      - path: CtrlMain/CtrlLegRight/IKLegRight
+        weight: 1
+      - path: MeshAntagonistBody
+        weight: 1
+      - path: MeshAntagonistCape
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0299999993
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 
