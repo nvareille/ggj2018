@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnnemiStats : AStats {
+public class EnemyStats : AStats {
 
 
 

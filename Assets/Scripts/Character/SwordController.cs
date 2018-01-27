@@ -27,9 +27,9 @@ public class SwordController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ennemi")
+        if (other.tag == "Enemy")
         {
-            other.GetComponent<EnnemiStats>().GetHit(Damage);
+            other.GetComponent<EnemyStats>().GetHit(Damage);
         }
     }
 }
