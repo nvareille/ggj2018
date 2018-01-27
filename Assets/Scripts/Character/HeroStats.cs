@@ -6,6 +6,13 @@ using UnityEngine.UI;
 public class HeroStats : AStats
 {
     public Slider LifeBar;
+    
+
+
+    public void Awake()
+    {
+        
+    }
 
     public void Update()
     {
