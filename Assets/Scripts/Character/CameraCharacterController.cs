@@ -22,12 +22,15 @@ public class CameraCharacterController : MonoBehaviour
 
     [Header("Components")]
     public Camera FollowingCamera;
+    [SerializeField]
+    private Animator _animator;
 
     [Header("RaycastCollisionDetection")]
     public RaycastDirection[] Directions;
 
     private Rigidbody Rigidbody;
     private bool MayJump;
+    private float IdleTimer = 0;
 
     public void Awake()
     {
@@ -54,6 +57,7 @@ public class CameraCharacterController : MonoBehaviour
                 {
                     Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
                     MayJump = true;
+                    _animator.SetBool("InTheAir", false);
                 }
                 else
                     Rigidbody.constraints = RigidbodyConstraints.FreezeAll ^ RigidbodyConstraints.FreezePositionY;
@@ -70,9 +74,23 @@ public class CameraCharacterController : MonoBehaviour
     public void ComputeDirection(float direction)
     {
         if (direction > 0)
+        {
+            IdleTimer = 0;
+            _animator.SetBool("Walk", true);
             transform.localRotation = Quaternion.Euler(0, 90, 0);
+        }
         else if (direction < 0)
+        {
+            IdleTimer = 0;
+            _animator.SetBool("Walk", true);
             transform.localRotation = Quaternion.Euler(0, -90, 0);
+        }
+        else if (direction == 0)
+        {//si il n'a pas touché au joystick depuis 0.05sec, on le considère en idle -> car quand on change de direction il repasse par le Zero/idle et c'est relou
+            IdleTimer += Time.deltaTime;
+            if (IdleTimer >= 0.05f)
+                _animator.SetBool("Walk", false);
+        }
     }
 
     public void TryJump()
@@ -80,6 +98,7 @@ public class CameraCharacterController : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && MayJump)
         {
             MayJump = false;
+            _animator.SetBool("InTheAir", true);
             Rigidbody.AddForce(new Vector3(0, JumpStrength, 0));
             Rigidbody.constraints = RigidbodyConstraints.FreezeAll ^ RigidbodyConstraints.FreezePositionY;
         }

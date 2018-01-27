@@ -269,9 +269,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4336355853645158}
-  - component: {fileID: 111597827022092532}
-  - component: {fileID: 54498446353822742}
+  - component: {fileID: 95252104766325478}
   - component: {fileID: 65842145833940762}
+  - component: {fileID: 54498446353822742}
   - component: {fileID: 114479896698264494}
   m_Layer: 0
   m_Name: Character
@@ -1177,7 +1177,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1063116071948588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1492,28 +1492,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.46, z: 1}
   m_Center: {x: 0, y: 0.68, z: 0}
---- !u!111 &111597827022092532
-Animation:
+--- !u!95 &95252104766325478
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1406989177735856}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  - {fileID: 7400002, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  - {fileID: 7400004, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  - {fileID: 7400006, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  - {fileID: 7400008, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  - {fileID: 7400010, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  - {fileID: 7400012, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  - {fileID: 7400014, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 1
+  m_Avatar: {fileID: 9000000, guid: 0d96edfcd8df8e04db5dae14e09cf0f2, type: 3}
+  m_Controller: {fileID: 9100000, guid: 02c8770d75a693e42a5fb2a27eb8c33a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114479896698264494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1530,6 +1525,7 @@ MonoBehaviour:
   JumpStrength: 590
   PositionModifier: {x: 0, y: 2, z: -10}
   FollowingCamera: {fileID: 0}
+  _animator: {fileID: 95252104766325478}
   Directions:
   - Length: 0.65
     Direction: {x: 1, y: 0, z: 0}
