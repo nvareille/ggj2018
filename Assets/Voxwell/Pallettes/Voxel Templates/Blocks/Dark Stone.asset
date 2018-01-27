@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691bffcf64c934543bb21b592e194563, type: 3}
+  m_Name: Dark Stone
+  m_EditorClassIdentifier: 
+  DisplayOrder: 10
+  RandomBetweenTwoColors: 0
+  color:
+    serializedVersion: 2
+    rgba: 4291348680
+  color2:
+    serializedVersion: 2
+    rgba: 4294967295
+  useFrontUvsForAllFaces: 1
+  drawFacesInCenter: 0
+  atlasScale: {x: .0625, y: .0625}
+  DisplayTexture: {fileID: 0}
+  SpriteFront: {fileID: 0}
+  SpriteBack: {fileID: 0}
+  SpriteTop: {fileID: 0}
+  SpriteBottom: {fileID: 0}
+  SpriteLeft: {fileID: 0}
+  SpriteRight: {fileID: 0}
+  UVOffsetFront: {x: .0625, y: .9375}
+  UVOffsetBack: {x: .0625, y: .9375}
+  UVOffsetTop: {x: .0625, y: .9375}
+  UVOffsetBottom: {x: .0625, y: .9375}
+  UVOffsetLeft: {x: .0625, y: .9375}
+  UVOffsetRight: {x: .0625, y: .9375}
+  shouldDraw: 1
+  drawFront: 1
+  drawBack: 1
+  drawTop: 1
+  drawBottom: 1
+  drawLeft: 1
+  drawRight: 1
+  voxelPallette: {fileID: 0}
+  shouldShowInInspector: 0
