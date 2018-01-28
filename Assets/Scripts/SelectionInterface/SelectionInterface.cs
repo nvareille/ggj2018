@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SelectionInterface : MonoBehaviour
@@ -13,15 +14,16 @@ public class SelectionInterface : MonoBehaviour
     public Image[] TraitsImage;
     public CameraCharacterController Character;
 
+    private EventSystem EventSystem;
     private List<TraitScriptableObject> SelectedTraits;
     private int Count;
 
-    private bool FirstTime = true;
+    public bool FirstTime = true;
 
     public void Awake()
     {
-        Init();
-        
+        EventSystem = FindObjectOfType<EventSystem>();
+        Init(true);
     }
 
     public void Update()
@@ -33,7 +35,7 @@ public class SelectionInterface : MonoBehaviour
         }
     }
 
-    public void Init()
+    public void Init(bool show = false)
     {
         Count = 0;
         foreach (Image s in Selected)
@@ -42,11 +44,16 @@ public class SelectionInterface : MonoBehaviour
         }
 
         int count = 0;
-        foreach (TraitScriptableObject o in Traits)
+        if (!FirstTime)
         {
-            DisplayObjects(o, count++);
+            foreach (TraitScriptableObject o in Traits)
+            {
+                DisplayObjects(o, count++);
+            }
+            TraitsImage[0].GetComponent<Button>().Select();
         }
-
+        
+        gameObject.SetActive(show);
         SelectedTraits = new List<TraitScriptableObject>();
     }
 
@@ -78,6 +85,7 @@ public class SelectionInterface : MonoBehaviour
         stats.WipeTraits();
         SelectedTraits.ForEach(stats.AddTrait);
         Character.Spawn();
+        Character.MayMove = true;
         gameObject.SetActive(false);
     }
 }

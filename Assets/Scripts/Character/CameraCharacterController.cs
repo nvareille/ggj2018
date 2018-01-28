@@ -19,6 +19,7 @@ public class CameraCharacterController : MonoBehaviour
     public float LerpStrength = 1f;
     public float JumpStrength = 100f;
     public Vector3 PositionModifier = new Vector3(0, 0, -10);
+    public SelectionInterface SelectionInterface;
     
     [Header("Components")]
     public Camera FollowingCamera;
@@ -30,7 +31,7 @@ public class CameraCharacterController : MonoBehaviour
     [Header("RaycastCollisionDetection")]
     public RaycastDirection[] Directions;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool MayMove = true;
 
     private Rigidbody Rigidbody;
@@ -40,9 +41,11 @@ public class CameraCharacterController : MonoBehaviour
     private int RoomLayer;
     private Vector3 SpawnPosition;
 
+    private bool BlockSuicide;
+
     public void Awake()
     {
-        MayMove = false;
+        //MayMove = false;
         SpawnPosition = transform.position;
         Rigidbody = GetComponent<Rigidbody>();
         Collider = GetComponent<BoxCollider>();
@@ -53,6 +56,19 @@ public class CameraCharacterController : MonoBehaviour
     {
         MayMove = true;
         transform.position = SpawnPosition;
+    }
+
+    public void Update()
+    {
+        if (!BlockSuicide && Input.GetButton("Suicide1") && Input.GetButton("Suicide2"))
+        {
+            BlockSuicide = true;
+            MayMove = false;
+            SelectionInterface.Init(true);
+            Debug.Log("BOUM");
+        }
+        else
+            BlockSuicide = false;
     }
 
     public void FixedUpdate()
