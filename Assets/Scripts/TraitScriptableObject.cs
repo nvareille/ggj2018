@@ -6,9 +6,9 @@ using UnityEngine;
 public class TraitScriptableObject : ScriptableObject
 {
     public Sprite Sprite;
-    public ETrait TraitName;
     public int Life = 0;
     public int Damage = 0;
     public float Speed = 0;
     public float AtkSpeed = 0;
+    public bool Bonus;
 }

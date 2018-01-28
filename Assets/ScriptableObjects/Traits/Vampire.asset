@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b03ecbb64f18b4087b7f5d8f9f4888, type: 3}
   m_Name: Vampire
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 30ef68dd9a2dbad4e89a959dac8c6536, type: 3}
+  Sprite: {fileID: 21300000, guid: 0876a9d00f81eae41bd80449e6087b7f, type: 3}
   TraitName: 3
   Life: 0
   Damage: 1
   Speed: 0
   AtkSpeed: 0
+  Bonus: 1

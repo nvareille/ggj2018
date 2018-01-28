@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LootController : MonoBehaviour {
-
-    public bool IsBenefic;
+public class LootController : MonoBehaviour
+{
+    
     public bool IsInterupt;
+
+    public TraitScriptableObject Trait;
 
     private int CharacterLayer;
     private bool IsUsed;
@@ -19,7 +21,7 @@ public class LootController : MonoBehaviour {
     {
         if (collider.gameObject.layer == CharacterLayer && !IsInterupt && Input.GetButtonDown("Interact") && !IsUsed)
         {
-            collider.GetComponent<HeroStats>().WinATrait(IsBenefic);
+            collider.GetComponent<HeroStats>().WinATrait(Trait);
             IsUsed = true;
             GetComponent<BoxCollider>().enabled = false;
         }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AStats : MonoBehaviour {
+public abstract class AStats : MonoBehaviour
+{
 
     [Header("Stats")]
     public int Life = 1;
@@ -10,12 +11,38 @@ public abstract class AStats : MonoBehaviour {
     public float Speed = 1;
     public float AtkSpeed = 1;
 
+    private int LifeSave;
+    private int CurrentLifeSave;
+    private int DamageSave;
+    private float SpeedSave;
+    private float AtkSpeedSave;
+    
     protected int CurrentLife;
     protected bool IsDead;
 
-    public void Start()
+    public void Awake()
     {
         CurrentLife = Life;
+        BackupStats();
+    }
+    
+    public void BackupStats()
+    {
+        Debug.Log("BACK");
+        LifeSave = Life;
+        CurrentLifeSave = CurrentLife;
+        DamageSave = Damage;
+        SpeedSave = Speed;
+        AtkSpeedSave = AtkSpeed;
+    }
+
+    public void RestoreStats()
+    {
+        Life = LifeSave;
+        CurrentLife = CurrentLifeSave;
+        Damage = DamageSave;
+        Speed = SpeedSave;
+        AtkSpeed = AtkSpeedSave;
     }
 
     public void GetHit(int dmg)

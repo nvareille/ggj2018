@@ -3,91 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum ETrait
-{
-    NONE = 0,
-    COSTAUD,
-    DEMON,
-    VAMPIRE,
-    VENTRIPOTENT,
-}
-
 public class HeroStats : AStats
 {
     public Slider LifeBar;
 
-    public Image[] BonusGUI;
-    public Image[] MalusGUI;
+    public List<TraitScriptableObject> UnlockedTraits;
+    public List<TraitScriptableObject> Traits;
 
-    public TraitScriptableObject[] Bonus;
-    public TraitScriptableObject[] Malus;
-
-    private int BonusCount;
-    private int MaluscCount;
-
-    private List<ETrait> Traits;
-    public bool IsHavingATrait(ETrait trait)
-    {
-        foreach (ETrait elem in Traits)
-        {
-            if (elem == trait)
-                return true;
-        }
-        return false;
-    }
+    public Image[] TraitGUI;
 
     public void Awake()
     {
-        Traits = new List<ETrait>();
-        /*
-        BonusCount = 0;
-        foreach (TraitScriptableObject o in Bonus)
-        {
-            BonusGUI[BonusCount].gameObject.SetActive(true);
-            BonusGUI[BonusCount].sprite = o.Sprite;
-            Life += o.Life;
-            Damage += o.Damage;
-            Speed += o.Speed;
-            AtkSpeed += o.AtkSpeed;
-            ++BonusCount;
-        }
+        UnlockedTraits = new List<TraitScriptableObject>();
+        Traits = new List<TraitScriptableObject>();
 
-        MaluscCount = 0;
-        foreach (TraitScriptableObject o in Malus)
+        foreach (Image image in TraitGUI)
         {
-            MalusGUI[MaluscCount].gameObject.SetActive(true);
-            MalusGUI[MaluscCount].sprite = o.Sprite;
-            Life += o.Life;
-            Damage += o.Damage;
-            Speed += o.Speed;
-            AtkSpeed += o.AtkSpeed;
-            ++MaluscCount;
-        }*/
+            image.gameObject.SetActive(false);
+        }
+        base.Awake();
     }
 
-    public void WinATrait(bool IsBenefic)
+    public void WipeTraits()
     {
-        TraitScriptableObject trait;
+        Traits.Clear();
+        foreach (Image image in TraitGUI)
+        {
+            image.gameObject.SetActive(false);
+        }
+        RestoreStats();
+    }
 
-        if (IsBenefic)
+    public void WinATrait(TraitScriptableObject trait)
+    {
+        if (!UnlockedTraits.Contains(trait))
         {
-            trait = Bonus[Random.Range(0, Bonus.Length)];
-            BonusGUI[BonusCount].gameObject.SetActive(true);
-            BonusGUI[BonusCount].sprite = trait.Sprite;
-            ++BonusCount;
+            UnlockedTraits.Add(trait);
+            Traits.Add(trait);
+            Life += trait.Life;
+            Damage += trait.Damage;
+            Speed += trait.Speed;
+            AtkSpeed += trait.AtkSpeed;
+
+            TraitGUI[Traits.Count - 1].gameObject.SetActive(true);
+            TraitGUI[Traits.Count - 1].sprite = trait.Sprite;
         }
-        else
-        {
-            trait = Malus[Random.Range(0, Malus.Length)];
-            MalusGUI[MaluscCount].gameObject.SetActive(true);
-            MalusGUI[MaluscCount].sprite = trait.Sprite;
-            ++MaluscCount;
-        }
-        Traits.Add(trait.TraitName);
-        Life += trait.Life;
-        Damage += trait.Damage;
-        Speed += trait.Speed;
-        AtkSpeed += trait.AtkSpeed;
     }
 
     public void Heal(int val)

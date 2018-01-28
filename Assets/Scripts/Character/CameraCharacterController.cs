@@ -19,7 +19,7 @@ public class CameraCharacterController : MonoBehaviour
     public float LerpStrength = 1f;
     public float JumpStrength = 100f;
     public Vector3 PositionModifier = new Vector3(0, 0, -10);
-
+    
     [Header("Components")]
     public Camera FollowingCamera;
     [SerializeField]
@@ -38,12 +38,21 @@ public class CameraCharacterController : MonoBehaviour
     private bool MayJump;
     private float IdleTimer = 0;
     private int RoomLayer;
+    private Vector3 SpawnPosition;
 
     public void Awake()
     {
+        MayMove = false;
+        SpawnPosition = transform.position;
         Rigidbody = GetComponent<Rigidbody>();
         Collider = GetComponent<BoxCollider>();
         RoomLayer = LayerMask.NameToLayer("Room");
+    }
+
+    public void Spawn()
+    {
+        MayMove = true;
+        transform.position = SpawnPosition;
     }
 
     public void FixedUpdate()

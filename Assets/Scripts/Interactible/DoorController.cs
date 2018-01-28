@@ -9,7 +9,7 @@ public class DoorController : MonoBehaviour
     [Header("Configuration")]
     public DoorController TeleportTo;
     public Vector3 Spawn;
-    public ETrait Condition;
+    public TraitScriptableObject Condition;
 
     private int CharacterLayer;
     private Camera Camera;
@@ -24,9 +24,9 @@ public class DoorController : MonoBehaviour
     {
         if (collider.gameObject.layer == CharacterLayer && Input.GetButtonDown("Interact"))
         {
-            if (Condition != ETrait.NONE)
+            if (Condition != null)
             {
-                if (!(collider.GetComponent<HeroStats>().IsHavingATrait(Condition)))
+                if (!(collider.GetComponent<HeroStats>().Traits.Contains(Condition)))
                     return;
             }
             CameraCharacterController chara = collider.gameObject.GetComponent<CameraCharacterController>();

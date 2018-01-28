@@ -17,3 +17,4 @@ MonoBehaviour:
   Damage: 1
   Speed: 0
   AtkSpeed: 0
+  Bonus: 1
