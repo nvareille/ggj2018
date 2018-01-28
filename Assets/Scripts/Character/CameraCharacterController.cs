@@ -111,7 +111,7 @@ public class CameraCharacterController : MonoBehaviour
         {
             MayJump = false;
             Rigidbody.useGravity = !false;
-            _animator.SetBool("InTheAir", true);
+            //_animator.SetBool("InTheAir", true);
             Rigidbody.AddForce(new Vector3(0, JumpStrength, 0));
         }
     }
