@@ -34,7 +34,12 @@ public class Arrow : MonoBehaviour {
         if (other.tag == "Player")
         {
             other.GetComponent<AStats>().GetHit(Damage);
+            GameObject.Destroy(this.gameObject);
         }
-        GameObject.Destroy(this.gameObject);
+        else if (other.gameObject.layer == LayerMask.NameToLayer("Room"))
+        {
+            GameObject.Destroy(this.gameObject);
+        }
+        
     }
 }

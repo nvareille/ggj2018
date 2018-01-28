@@ -62,13 +62,32 @@ public class CameraCharacterController : MonoBehaviour
     {
         if (!BlockSuicide && Input.GetButton("Suicide1") && Input.GetButton("Suicide2"))
         {
-            BlockSuicide = true;
-            MayMove = false;
-            SelectionInterface.Init(true);
+            Die();
             Debug.Log("BOUM");
         }
         else
             BlockSuicide = false;
+    }
+
+    public void Die()
+    {
+        BlockSuicide = true;
+        MayMove = false;
+        SelectionInterface.Init(true);
+        StartCoroutine(ResMob());
+    }
+
+    IEnumerator ResMob()
+    {
+        EnemyRespawn[] enemys = FindObjectsOfType<EnemyRespawn>();
+
+        foreach(EnemyRespawn elem in enemys)
+        {
+            elem.Reload();
+            yield return new WaitForFixedUpdate();
+        }
+
+        FindObjectOfType<BossAI>().Reset();
     }
 
     public void FixedUpdate()

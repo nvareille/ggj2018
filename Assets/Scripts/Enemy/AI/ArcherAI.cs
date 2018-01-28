@@ -5,9 +5,9 @@ using UnityEngine;
 public class ArcherAI : AI {
 
     [SerializeField]
-    private Transform Player;
-    [SerializeField]
     private RangeWeaponController Weapon;
+    [SerializeField]
+    private SphereCollider eye;
 
     protected override void Idle()
     {
@@ -61,4 +61,17 @@ public class ArcherAI : AI {
             AtkTimer = 0;
         }
     }
+
+    public override void KillHim()
+    {
+        base.KillHim();
+        eye.radius = 20;
+    }
+
+    public override void LostHim()
+    {
+        base.KillHim();
+        eye.radius = 15;
+    }
+
 }

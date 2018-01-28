@@ -814,7 +814,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555404368891936}
-  m_LocalRotation: {x: 0.59806913, y: 0.17589879, z: 0.77263486, w: 0.12003507}
+  m_LocalRotation: {x: 0.5980691, y: 0.17589878, z: 0.77263474, w: 0.12003505}
   m_LocalPosition: {x: -0.8021389, y: 0.09272738, z: -0.013684436}
   m_LocalScale: {x: 1.7836757, y: 1.7836754, z: 1.7836765}
   m_Children: []
@@ -1386,7 +1386,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1629696464069816}
-  m_LocalRotation: {x: 0.59806913, y: 0.17589879, z: 0.77263486, w: 0.12003507}
+  m_LocalRotation: {x: 0.5980691, y: 0.17589878, z: 0.77263474, w: 0.12003505}
   m_LocalPosition: {x: -0.7189314, y: 0.07900119, z: -0.0068782624}
   m_LocalScale: {x: 1.7836757, y: 1.7836754, z: 1.7836765}
   m_Children: []
@@ -2293,10 +2293,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1862a17ff50982f43b4684c5a3a84623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Life: 12
-  Damage: 1
-  Speed: 1
+  Life: 250
+  Damage: 40
+  Speed: 0.8
   AtkSpeed: 3.9
+  IsImportant: 0
   PlayerDist: 1.6
 --- !u!114 &114460083546322672
 MonoBehaviour:
@@ -2312,8 +2313,9 @@ MonoBehaviour:
   Delay: 1.5
   AtkDuration: 0.6
   Target: Player
+  WillBeDestroy: 0
   SwordCollider: {fileID: 65008440494228842}
-  Rend: {fileID: 23049140506120346}
+  Rend: {fileID: 0}
 --- !u!135 &135369312353100124
 SphereCollider:
   m_ObjectHideFlags: 1

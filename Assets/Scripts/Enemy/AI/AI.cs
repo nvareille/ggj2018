@@ -11,12 +11,13 @@ public enum EAIState
 
 public abstract class AI : MonoBehaviour {
 
+    [SerializeField]
+    protected Transform Player;
     protected EnemyStats Stat;
     protected Animator Anim;
     protected delegate void UpdateState();
     protected UpdateState[] UpdateSM;
     protected int UpdateIndex;
-
     protected float AtkTimer;
 
     protected bool IsAttacking = true;
@@ -27,6 +28,10 @@ public abstract class AI : MonoBehaviour {
     {
         Stat = GetComponent<EnemyStats>();
         Anim = GetComponent<Animator>();
+        if (Player == null)
+        {
+            Player = FindObjectOfType<HeroStats>().transform;
+        }
         UpdateSM = new UpdateState[]{
             Idle,
             Move,
@@ -35,6 +40,7 @@ public abstract class AI : MonoBehaviour {
         UpdateIndex = 0;
         AtkTimer = Stat.AtkSpeed;
         //pour le golem, l'archer
+        if (Anim.GetBehaviour<RandomAtkAnimator>() != null)
         Anim.GetBehaviour<RandomAtkAnimator>().unit = this;
     }
 

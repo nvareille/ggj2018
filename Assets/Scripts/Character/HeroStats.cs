@@ -10,6 +10,8 @@ public class HeroStats : AStats
     public List<TraitScriptableObject> UnlockedTraits;
     public List<TraitScriptableObject> Traits;
 
+    public SwordController Sword;
+
     public Image[] TraitGUI;
 
     public void Awake()
@@ -23,6 +25,7 @@ public class HeroStats : AStats
             image.gameObject.SetActive(false);
         }
         base.Awake();
+        Sword.SetDamage(Damage);
     }
 
     public void WipeTraits()

@@ -11,6 +11,9 @@ public abstract class AStats : MonoBehaviour
     public float Speed = 1;
     public float AtkSpeed = 1;
 
+    [Header("Config")]
+    public bool IsImportant;
+
     private int LifeSave;
     private int CurrentLifeSave;
     private int DamageSave;
@@ -19,6 +22,9 @@ public abstract class AStats : MonoBehaviour
     
     protected int CurrentLife;
     protected bool IsDead;
+
+    public int GetLife() { return CurrentLife; }
+    public void ResetLife() { CurrentLife = Life; }
 
     public void Awake()
     {
@@ -55,6 +61,21 @@ public abstract class AStats : MonoBehaviour
             IsDead = true;
             CurrentLife = 0;
             //play anim de mort
+            if (!IsImportant)
+            {
+                GameObject.Destroy(this.gameObject, 0.6f);
+            }
+            else
+            {
+                if (this.GetComponent<CameraCharacterController>() != null)
+                {
+                    GetComponent<CameraCharacterController>().Die();
+                }
+                else
+                {
+                    //Winnnn
+                }
+            }
         }
         Debug.Log(this.name + " take " + dmg + ", only " + CurrentLife + " left !");
     }

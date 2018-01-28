@@ -846,7 +846,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1406989177735856}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.11, y: 1.45, z: 0.13}
+  m_LocalPosition: {x: 35.88, y: 4.26, z: 0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4348923011756220}
@@ -1553,7 +1553,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 112
+  m_Constraints: 114
   m_CollisionDetection: 2
 --- !u!65 &65334351694682784
 BoxCollider:
@@ -1610,6 +1610,7 @@ MonoBehaviour:
   Delay: 0.2
   AtkDuration: 0.3
   Target: Enemy
+  WillBeDestroy: 0
   SwordCollider: {fileID: 65334351694682784}
   Rend: {fileID: 23454636108354526}
 --- !u!114 &114479896698264494
@@ -1627,6 +1628,7 @@ MonoBehaviour:
   LerpStrength: 0.25
   JumpStrength: 590
   PositionModifier: {x: 0, y: 2, z: -6}
+  SelectionInterface: {fileID: 0}
   FollowingCamera: {fileID: 0}
   _animator: {fileID: 95252104766325478}
   Sword: {fileID: 114095308678618956}
@@ -1647,25 +1649,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cb9edf2b304e8499b05848b92bfbb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Life: 100
-  Damage: 1
+  Life: 300
+  Damage: 30
   Speed: 1
   AtkSpeed: 1
+  IsImportant: 0
   LifeBar: {fileID: 0}
-  BonusGUI:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MalusGUI:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Bonus:
-  - {fileID: 11400000, guid: d3ab966cc7478594cbb8b60015a572f9, type: 2}
-  Malus:
-  - {fileID: 11400000, guid: 5d54c1e8c6c3b4d4f837839c305485b5, type: 2}
-  - {fileID: 11400000, guid: f4912682ec247a545b57f6bdd16313ce, type: 2}
-  - {fileID: 11400000, guid: d580a5facbd62ee489e4758259fef342, type: 2}
+  UnlockedTraits: []
+  Traits: []
+  Sword: {fileID: 114095308678618956}
+  TraitGUI: []
 --- !u!137 &137237147663579024
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

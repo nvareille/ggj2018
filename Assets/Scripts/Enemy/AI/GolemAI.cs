@@ -5,13 +5,12 @@ using UnityEngine;
 public class GolemAI : AI {
 
     [SerializeField]
-    private Transform Player;
-    [SerializeField]
     private SwordController Hand;
 
     protected override void Start()
     {
         base.Start();
+        Hand.SetDamage(Stat.Damage);
         //Debug.Log("Idle");
     }
 

@@ -8,6 +8,7 @@ public class SwordController : MonoBehaviour {
     public float Delay = 0.6f;
     public float AtkDuration = 1f;
     public string Target = "Player";
+    public bool WillBeDestroy = false;
 
     [Header("Components")]
     [SerializeField]
@@ -36,6 +37,10 @@ public class SwordController : MonoBehaviour {
         SwordCollider.enabled = false;
         if (Rend != null)
             Rend.enabled = false;
+        if (WillBeDestroy)
+        {
+            GameObject.Destroy(this.gameObject, 2);
+        }
     }
 
     void OnTriggerEnter(Collider other)
