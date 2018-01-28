@@ -74,6 +74,7 @@ public abstract class AStats : MonoBehaviour
                 else
                 {
                     //Winnnn
+                    FindObjectOfType<CameraCharacterController>().Win();
                 }
             }
         }

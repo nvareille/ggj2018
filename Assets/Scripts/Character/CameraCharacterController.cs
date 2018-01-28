@@ -20,6 +20,7 @@ public class CameraCharacterController : MonoBehaviour
     public float JumpStrength = 100f;
     public Vector3 PositionModifier = new Vector3(0, 0, -10);
     public SelectionInterface SelectionInterface;
+    public WinUI _win;
     
     [Header("Components")]
     public Camera FollowingCamera;
@@ -39,6 +40,7 @@ public class CameraCharacterController : MonoBehaviour
     private bool MayJump;
     private float IdleTimer = 0;
     private int RoomLayer;
+    private int EnemyLayer;
     private Vector3 SpawnPosition;
 
     private bool BlockSuicide;
@@ -50,10 +52,12 @@ public class CameraCharacterController : MonoBehaviour
         Rigidbody = GetComponent<Rigidbody>();
         Collider = GetComponent<BoxCollider>();
         RoomLayer = LayerMask.NameToLayer("Room");
+        EnemyLayer = LayerMask.NameToLayer("Enemy");
     }
 
     public void Spawn()
     {
+        BlockSuicide = false;
         MayMove = true;
         transform.position = SpawnPosition;
     }
@@ -75,6 +79,21 @@ public class CameraCharacterController : MonoBehaviour
         MayMove = false;
         SelectionInterface.Init(true);
         StartCoroutine(ResMob());
+    }
+
+    public void Win()
+    {
+        BlockSuicide = true;
+        MayMove = false;
+        _win.gameObject.SetActive(true);
+        _win.Init();
+        StartCoroutine(ResMob());
+    }
+
+    public void Res()
+    {
+        Spawn();
+        _win.gameObject.SetActive(false);
     }
 
     IEnumerator ResMob()
@@ -191,13 +210,13 @@ public class CameraCharacterController : MonoBehaviour
             
             foreach (RaycastHit hit in Physics.RaycastAll(r[0], distance))
             {
-                if (hit.collider.gameObject.layer == RoomLayer && direction > 0)
+                if ((hit.collider.gameObject.layer == RoomLayer || hit.collider.gameObject.layer == EnemyLayer) && direction > 0)
                     return (0);
             }
 
             foreach (RaycastHit hit in Physics.RaycastAll(r[1], distance))
             {
-                if (hit.collider.gameObject.layer == RoomLayer && direction < 0)
+                if ((hit.collider.gameObject.layer == RoomLayer || hit.collider.gameObject.layer == EnemyLayer) && direction < 0)
                     return (0);
             }
 

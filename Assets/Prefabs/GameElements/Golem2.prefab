@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 54019699849606682}
   - component: {fileID: 114259649350987722}
   - component: {fileID: 114125976627437090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Golem2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -814,7 +814,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555404368891936}
-  m_LocalRotation: {x: 0.5980691, y: 0.17589878, z: 0.77263474, w: 0.12003505}
+  m_LocalRotation: {x: 0.59806913, y: 0.17589879, z: 0.77263486, w: 0.12003507}
   m_LocalPosition: {x: -0.8021389, y: 0.09272738, z: -0.013684436}
   m_LocalScale: {x: 1.7836757, y: 1.7836754, z: 1.7836765}
   m_Children: []
@@ -1386,7 +1386,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1629696464069816}
-  m_LocalRotation: {x: 0.5980691, y: 0.17589878, z: 0.77263474, w: 0.12003505}
+  m_LocalRotation: {x: 0.59806913, y: 0.17589879, z: 0.77263486, w: 0.12003507}
   m_LocalPosition: {x: -0.7189314, y: 0.07900119, z: -0.0068782624}
   m_LocalScale: {x: 1.7836757, y: 1.7836754, z: 1.7836765}
   m_Children: []
