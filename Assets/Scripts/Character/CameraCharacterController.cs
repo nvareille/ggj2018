@@ -30,27 +30,30 @@ public class CameraCharacterController : MonoBehaviour
     [Header("RaycastCollisionDetection")]
     public RaycastDirection[] Directions;
 
+    [HideInInspector]
+    public bool MayMove = true;
+
     private Rigidbody Rigidbody;
     private BoxCollider Collider;
     private bool MayJump;
     private float IdleTimer = 0;
+    private int RoomLayer;
 
     public void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
         Collider = GetComponent<BoxCollider>();
+        RoomLayer = LayerMask.NameToLayer("Room");
     }
 
     public void FixedUpdate()
     {
-        float direction = Input.GetAxis("Horizontal");
+        float direction = (MayMove ? Input.GetAxis("Horizontal") : 0);
 
         direction = CheckCollision(direction);
         ComputeDirection(direction);
         
         transform.position += Vector3.right * direction * Speed;
-
-        bool touch = false;
 
         foreach (RaycastDirection d in Directions)
         {
@@ -144,15 +147,13 @@ public class CameraCharacterController : MonoBehaviour
             
             foreach (RaycastHit hit in Physics.RaycastAll(r[0], distance))
             {
-                Debug.Log(hit.collider.name);
-                if (direction > 0)
+                if (hit.collider.gameObject.layer == RoomLayer && direction > 0)
                     return (0);
             }
 
             foreach (RaycastHit hit in Physics.RaycastAll(r[1], distance))
             {
-                Debug.Log(hit.collider.name);
-                if (direction < 0)
+                if (hit.collider.gameObject.layer == RoomLayer && direction < 0)
                     return (0);
             }
 
