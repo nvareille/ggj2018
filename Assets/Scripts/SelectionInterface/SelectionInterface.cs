@@ -16,9 +16,21 @@ public class SelectionInterface : MonoBehaviour
     private List<TraitScriptableObject> SelectedTraits;
     private int Count;
 
+    private bool FirstTime = true;
+
     public void Awake()
     {
         Init();
+        
+    }
+
+    public void Update()
+    {
+        if (FirstTime)
+        {
+            FirstTime = false;
+            Validate();
+        }
     }
 
     public void Init()
