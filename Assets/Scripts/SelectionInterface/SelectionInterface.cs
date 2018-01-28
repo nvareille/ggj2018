@@ -10,6 +10,7 @@ public class SelectionInterface : MonoBehaviour
     [Header("Config")]
     public Sprite DefaultSprite;
     public TraitScriptableObject[] Traits;
+    public Image[] TraitsImage;
     public CameraCharacterController Character;
 
     private List<TraitScriptableObject> SelectedTraits;
@@ -27,14 +28,35 @@ public class SelectionInterface : MonoBehaviour
         {
             s.sprite = DefaultSprite;
         }
+
+        int count = 0;
+        foreach (TraitScriptableObject o in Traits)
+        {
+            DisplayObjects(o, count++);
+        }
+
         SelectedTraits = new List<TraitScriptableObject>();
+    }
+
+    public void DisplayObjects(TraitScriptableObject o, int id)
+    {
+        HeroStats stats = Character.GetComponent<HeroStats>();
+
+        TraitsImage[id].sprite = stats.UnlockedTraits.Contains(o) ? o.Sprite : DefaultSprite;
     }
 
     public void SelectTrait(int id)
     {
-        Selected[Count].sprite = Traits[id].Sprite;
-        SelectedTraits.Add(Traits[id]);
-        ++Count;
+        HeroStats stats = Character.GetComponent<HeroStats>();
+
+        Debug.Log(stats.UnlockedTraits.Count);
+
+        if (stats.UnlockedTraits.Contains(Traits[id]))
+        {
+            Selected[Count].sprite = Traits[id].Sprite;
+            SelectedTraits.Add(Traits[id]);
+            ++Count;
+        }
     }
 
     public void Validate()
@@ -42,7 +64,7 @@ public class SelectionInterface : MonoBehaviour
         HeroStats stats = Character.GetComponent<HeroStats>();
 
         stats.WipeTraits();
-        SelectedTraits.ForEach(stats.WinATrait);
+        SelectedTraits.ForEach(stats.AddTrait);
         Character.Spawn();
         gameObject.SetActive(false);
     }

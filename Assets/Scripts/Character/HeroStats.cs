@@ -14,7 +14,8 @@ public class HeroStats : AStats
 
     public void Awake()
     {
-        UnlockedTraits = new List<TraitScriptableObject>();
+        if (UnlockedTraits == null)
+            UnlockedTraits = new List<TraitScriptableObject>();
         Traits = new List<TraitScriptableObject>();
 
         foreach (Image image in TraitGUI)
@@ -39,15 +40,20 @@ public class HeroStats : AStats
         if (!UnlockedTraits.Contains(trait))
         {
             UnlockedTraits.Add(trait);
-            Traits.Add(trait);
-            Life += trait.Life;
-            Damage += trait.Damage;
-            Speed += trait.Speed;
-            AtkSpeed += trait.AtkSpeed;
-
-            TraitGUI[Traits.Count - 1].gameObject.SetActive(true);
-            TraitGUI[Traits.Count - 1].sprite = trait.Sprite;
+            AddTrait(trait);
         }
+    }
+
+    public void AddTrait(TraitScriptableObject trait)
+    {
+        Traits.Add(trait);
+        Life += trait.Life;
+        Damage += trait.Damage;
+        Speed += trait.Speed;
+        AtkSpeed += trait.AtkSpeed;
+
+        TraitGUI[Traits.Count - 1].gameObject.SetActive(true);
+        TraitGUI[Traits.Count - 1].sprite = trait.Sprite;
     }
 
     public void Heal(int val)
