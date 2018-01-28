@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114913829809636948}
   m_Layer: 9
   m_Name: ArcherRoom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

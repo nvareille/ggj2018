@@ -57,6 +57,7 @@ public class HeroStats : AStats
 
         TraitGUI[Traits.Count - 1].gameObject.SetActive(true);
         TraitGUI[Traits.Count - 1].sprite = trait.Sprite;
+        Sword.SetDamage(Damage);
     }
 
     public void Heal(int val)
