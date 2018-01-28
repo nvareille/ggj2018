@@ -280,6 +280,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5d54c1e8c6c3b4d4f837839c305485b5, type: 2}
   - {fileID: 11400000, guid: d580a5facbd62ee489e4758259fef342, type: 2}
   - {fileID: 11400000, guid: f4912682ec247a545b57f6bdd16313ce, type: 2}
+  TraitsImage:
+  - {fileID: 114762790517035250}
+  - {fileID: 114919243274127810}
+  - {fileID: 114726388938820180}
+  - {fileID: 114688625118790942}
+  Character: {fileID: 0}
+  FirstTime: 1
 --- !u!114 &114217701282808852
 MonoBehaviour:
   m_ObjectHideFlags: 1

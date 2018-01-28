@@ -1104,10 +1104,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Life: 400
-  Damage: 60
+  Damage: 80
   Speed: 1
   AtkSpeed: 6
-  IsImportant: 0
+  IsImportant: 1
   PlayerDist: 0.1
 --- !u!136 &136762519595727192
 CapsuleCollider:

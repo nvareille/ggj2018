@@ -2294,7 +2294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Life: 250
-  Damage: 40
+  Damage: 60
   Speed: 0.8
   AtkSpeed: 3.9
   IsImportant: 0

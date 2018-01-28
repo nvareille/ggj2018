@@ -846,7 +846,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1406989177735856}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 35.88, y: 4.26, z: 0.13}
+  m_LocalPosition: {x: 2.73, y: 1.25, z: 0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4348923011756220}
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   Damage: 30
   Speed: 1
   AtkSpeed: 1
-  IsImportant: 0
+  IsImportant: 1
   LifeBar: {fileID: 0}
   UnlockedTraits: []
   Traits: []
