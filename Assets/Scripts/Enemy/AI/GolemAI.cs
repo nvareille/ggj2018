@@ -9,14 +9,10 @@ public class GolemAI : AI {
     [SerializeField]
     private SwordController Hand;
 
-    private bool IsAttacking = true;
-    public void SetAttack(bool val) { IsAttacking = val; }
-
     protected override void Start()
     {
         base.Start();
-
-        Anim.GetBehaviour<RandomAtkAnimator>().golem = this;
+        //Debug.Log("Idle");
     }
 
     protected override void Idle()
@@ -27,6 +23,8 @@ public class GolemAI : AI {
     protected override void Move()
     {
         //Debug.Log("Walk");
+        if (AtkTimer <= Stat.AtkSpeed)
+            AtkTimer += Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, Player.position, Stat.Speed * Time.deltaTime);
         if (Player.position.x > this.transform.position.x)
         {
@@ -36,7 +34,8 @@ public class GolemAI : AI {
         {
             transform.localRotation = Quaternion.Euler(-90, 180, 0);
         }
-        if (Vector3.Distance(transform.position, Player.position) < Stat.PlayerDist)
+        Vector3 tmp = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+        if (Vector3.Distance(tmp, Player.position) < Stat.PlayerDist)
         {
             UpdateIndex = (int)EAIState.ATK;
             Anim.SetBool("Walk", false);
@@ -54,7 +53,8 @@ public class GolemAI : AI {
         {
             transform.localRotation = Quaternion.Euler(-90, 180, 0);
         }
-        if (!IsAttacking && Vector3.Distance(transform.position, Player.position) > Stat.PlayerDist + 0.2f)
+        Vector3 tmp = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+        if (!IsAttacking && Vector3.Distance(tmp, Player.position) > Stat.PlayerDist + 0.2f)
         {
             UpdateIndex = (int)EAIState.MOVE;
             Anim.SetBool("Walk", true);
@@ -70,16 +70,4 @@ public class GolemAI : AI {
         }
     }
 
-
-    public override void KillHim()
-    {
-        UpdateIndex = (int)EAIState.MOVE;
-        Anim.SetBool("Walk", true);
-    }
-
-    public override void LostHim()
-    {
-        UpdateIndex = (int)EAIState.IDLE;
-        Anim.SetBool("Walk", false);
-    }
 }

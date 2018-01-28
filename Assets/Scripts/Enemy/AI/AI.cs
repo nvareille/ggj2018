@@ -19,6 +19,9 @@ public abstract class AI : MonoBehaviour {
 
     protected float AtkTimer;
 
+    protected bool IsAttacking = true;
+    public void SetAttack(bool val) { IsAttacking = val; }
+
     // Use this for initialization
     protected virtual void Start()
     {
@@ -31,6 +34,8 @@ public abstract class AI : MonoBehaviour {
         };
         UpdateIndex = 0;
         AtkTimer = Stat.AtkSpeed;
+        //pour le golem, l'archer
+        Anim.GetBehaviour<RandomAtkAnimator>().unit = this;
     }
 
     // Update is called once per frame
@@ -43,9 +48,17 @@ public abstract class AI : MonoBehaviour {
     protected abstract void Move();
     protected abstract void Attack();
 
-    public abstract void KillHim();
+    public virtual void KillHim()
+    {
+        UpdateIndex = (int)EAIState.MOVE;
+        Anim.SetBool("Walk", true);
+    }
 
-    public abstract void LostHim();
+    public virtual void LostHim()
+    {
+        UpdateIndex = (int)EAIState.IDLE;
+        Anim.SetBool("Walk", false);
+    }
 
 
 }
